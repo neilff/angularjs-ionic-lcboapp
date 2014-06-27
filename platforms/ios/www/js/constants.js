@@ -1,0 +1,1 @@
+angular.module('lcboApp').constant('ApiAddress', 'http://lcboapi.com');

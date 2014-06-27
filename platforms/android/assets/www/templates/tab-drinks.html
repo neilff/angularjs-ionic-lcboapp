@@ -1,9 +1,14 @@
 <ion-view title="Drinks">
-  <ion-content class="has-header">
+    <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        {{friend.name}}
-      </ion-item>
+        <ion-item ng-repeat="drink in drinks" type="item-text-wrap" class="item-thumbnail-left item-icon-right" href="#/tab/drinks/{{drink.id}}">
+            <img src="{{drink.image}}" alt="">
+            <h3>{{drink.name}}</h3>
+            <h4>{{drink.size}}</h4>
+            <h6>{{drink.content}}</h6>
+            <p>{{drink.price}}</p>
+            <i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
     </ion-list>
-  </ion-content>
+    </ion-content>
 </ion-view>
